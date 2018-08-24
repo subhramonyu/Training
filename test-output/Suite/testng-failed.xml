@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)" parallel="methods">
+    <classes>
+      <class name="Example.DummyClass">
+        <methods>
+          <include name="lounchWebsite"/>
+        </methods>
+      </class> <!-- Example.DummyClass -->
+      <class name="TestNGExample.TestAlert">
+        <methods>
+          <include name="testAlert"/>
+        </methods>
+      </class> <!-- TestNGExample.TestAlert -->
+      <class name="com.sellabs.testexecutor.TestMainClass">
+        <methods>
+          <include name="testDoLogin"/>
+        </methods>
+      </class> <!-- com.sellabs.testexecutor.TestMainClass -->
+      <class name="TestNGExample.AlltestNGMethod">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeMethod"/>
+          <include name="f"/>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+          <include name="beforeClass"/>
+          <include name="afterTest"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- TestNGExample.AlltestNGMethod -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
